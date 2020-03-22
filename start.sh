@@ -8,10 +8,10 @@ else
 		REDIRECT_TARGET="http://$REDIRECT_TARGET"
 	fi
 
-	# Add trailing slash
-	if [[ ${REDIRECT_TARGET:length-1:1} != "/" ]]; then
-		REDIRECT_TARGET="$REDIRECT_TARGET/"
-	fi
+	# NOT - Add trailing slash 
+	#if [[ ${REDIRECT_TARGET:length-1:1} != "/" ]]; then
+	#	REDIRECT_TARGET="$REDIRECT_TARGET/"
+	#fi
 fi
 
 # Default to 80
